@@ -11,4 +11,4 @@ print("🌤️ Starting weather simulator...\n")
 while True:
     temp, humidity = get_weather()
     print(f"Temperature: {temp}°C | Humidity: {humidity}%")
-    time.sleep(2)  # wait for 2 seconds before showing next reading
+    time.sleep(2) 
