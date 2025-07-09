@@ -2,13 +2,11 @@ import random
 import time
 import os
 
-# Make data folder if it doesn't exist
 if not os.path.exists("data"):
     os.makedirs("data")
 
 log_file = "data/weather_log.csv"
 
-# Write headers if file is new
 if not os.path.exists(log_file) or os.stat(log_file).st_size == 0:
     with open(log_file, "w") as f:
         f.write("Temperature(°C),Humidity(%),Timestamp\n")
